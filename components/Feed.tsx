@@ -7,8 +7,8 @@ const FeedContianer = styled.li`
   box-sizing:border-box;
   border-radius: 10px;
   position: relative;
-  /* background:url(${props=>props.profileImg===""?"":props=>props.profileImg}) no-repeat; */
-
+  background:url(${props=>props.profileImg===""?"":props=>props.profileImg}) no-repeat;
+  background-size: contain;
 `;
 const ImageNavigationButton = styled.button`
   width: 50%;
@@ -33,8 +33,11 @@ const ExitButton = styled.button`
 `;
 
 export const Feed = () => {
+  const dummy = {
+    profileImg: "https://img.etoday.co.kr/pto_db/2017/11/20171107104017_1147769_600_600.jpg"
+  }
   return (
-    <FeedContianer profileImg="">
+    <FeedContianer profileImg={dummy.profileImg}>
       <figure>
         <ul>
           <li>
