@@ -69,3 +69,7 @@ export interface IModal {
   open: boolean;
   contentsType: number;
 }
+
+export interface IScreen {
+  show: Boolean;
+}
