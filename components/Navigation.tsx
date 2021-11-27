@@ -5,12 +5,11 @@ const Nav = styled.nav`
   position: fixed;
   bottom:0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 50px;
   display: flex;
   flex-wrap: nowrap;
   background: #fff;
-
 `;
 const Tab = styled.button`
   flex: 1;
@@ -25,7 +24,8 @@ interface INav {
   selectScreen: React.Dispatch<React.SetStateAction<boolean>>;
   screen: Boolean;
 }
-export const Navigation = (props:INav) =>{
+
+const Navigation = (props:INav) =>{
   return(
     <Nav>
       <Tab onClick={()=>props.selectScreen(true)}>glam</Tab>
@@ -33,3 +33,5 @@ export const Navigation = (props:INav) =>{
     </Nav>
   )
 }
+
+export default Navigation;

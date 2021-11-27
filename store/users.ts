@@ -12,7 +12,7 @@ export const users = createSlice({
   initialState: [
     {id: 1, name: "ricky"},
     {id: 1, name: "ricky"}  
-  ] as User[],
+  ],
   reducers: {
     addUser(state, action: PayloadAction<User>){
       action.payload.id = tempId++;

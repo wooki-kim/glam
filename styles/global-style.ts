@@ -11,12 +11,13 @@ export const GlobalStyle = createGlobalStyle`
         display: none;
     }
     html{
-        font-size: 12px;
+        font-size: 16px;
         -webkit-text-size-adjust: none;
         font-family: -apple-system,BlinkMacSystemFont,helvetica,Apple SD Gothic Neo,sans-serif;       
         font-display: fallback;
         -ms-overflow-style: none;
         scrollbar-width: none;
+        background: rgb(120, 120, 120);
     }
     button {
         background: none;

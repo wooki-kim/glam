@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Feed } from ".";
 import { Container } from "../styles/common";
-import { IScreen } from "../types";
+import { IScreen, IFeedList, IProfile } from "../types";
+import { GetServerSideProps } from "next";
 
-export const Glam = (props:IScreen) => {
+interface Props {
+  feedList: IFeedList;
+}
+
+const Glam = () => {
   return (
-    <Container show={props.show}>
+    <Container>
       <Feed />
     </Container>
   );
 };
+
+export default Glam;

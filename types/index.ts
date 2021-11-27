@@ -12,12 +12,12 @@ export interface IPhoto {
 //   feedIdx: number;
 // }
 export interface IFeedList {
-  feedList: IProfile[];
+  feedList: IProfile[] | undefined;
 }
 
 export interface IProfile {
   profileIdx: number;
-  photo?: IPhoto[];
+  photo?: string[];
   nickName: string;
   birthday: Date;
   location?: string;
