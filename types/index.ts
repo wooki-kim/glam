@@ -17,7 +17,7 @@ export interface IFeedList {
 
 export interface IProfile {
   profileIdx: number;
-  photo?: string[];
+  photo: string[];
   nickName: string;
   birthday: Date;
   location?: string;

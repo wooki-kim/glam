@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>글램</title>
+        <title>야옹히어로</title>
       </Head>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
